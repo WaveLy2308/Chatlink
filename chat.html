@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Abrir Chat</title>
+    <script>
+        // Deep link do seu app
+        var appLink = "meuapp://chat";
+
+        // Link do seu app na Google Play Store
+        var playStoreLink = "https://play.google.com/store/apps/details?id=com.unepix.skyline";
+
+        // Tenta abrir o app
+        window.location = appLink;
+
+        // Se não abrir em 2 segundos, redireciona para Play Store
+        setTimeout(function() {
+            window.location = playStoreLink;
+        }, 2000);
+    </script>
+</head>
+<body>
+    <p>Redirecionando para o app...</p>
+</body>
+</html>
